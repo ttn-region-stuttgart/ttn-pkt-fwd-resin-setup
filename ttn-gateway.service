@@ -5,9 +5,9 @@ Description=TTN Packet Forwarder Service
 WantedBy=multi-user.target
 
 [Service]
-TimeoutStartSec=infinity
+TimeoutStartSec=0
 Type=simple
-TimeoutSec=infinity
+TimeoutSec=0
 RestartSec=10
 WorkingDirectory=/usr/local/bin
 ExecStartPre=/usr/local/bin/pkt-fwd-config.sh
