@@ -14,7 +14,12 @@ then set the following environment variables for each device in your
 |----------|-------|
 | GW_ID    | The gateway id from your TTN Console that you chose during registration|
 | GW_KEY   | The long Base64 Encoded key that authorises your gateway to TTN |
-| GW_RESET_PIN | The reset pin as documented on the data sheet. If you're using the simple backplane board, this should be set to `22` |
+| GW_RESET_PIN | The reset pin as documented on the data sheet. |
+
+| backplane board | GW_RESET_PIN |
+|-----------------|--------------|
+| simple          | `22`         |
+| ch2i (V1.1)     | `17`         |
 
 Once you've configured the above, add a remote to your clone of this repo as
 documented in the Resin Dashboard, and `git push resin master`.
